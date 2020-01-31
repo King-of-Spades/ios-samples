@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<SampleMetadata>
-	<ID>61b02366-41d5-4e98-a0ee-1b2115bdd934</ID>
-	<IsFullApplication>false</IsFullApplication>
-	<Level>Intermediate</Level>
-	<Tags>Maps + Location</Tags>
-	<Gallery>true</Gallery>
-	<Brief>Demonstrates generating GeoJSON coverage files for use with the Maps routing apps API.</Brief>
-</SampleMetadata>

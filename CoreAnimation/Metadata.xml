@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<SampleMetadata>
-	<ID>afab3ce5-a98f-43d8-a981-c803ca8b9738</ID>
-	<IsFullApplication>false</IsFullApplication>
-	<Level>Intermediate</Level>
-	<Tags>Graphics</Tags>
-	<Gallery>true</Gallery>
-	<Brief>This sample illustrates how to use core animation in Xamarin.iOS.</Brief>
-</SampleMetadata>
