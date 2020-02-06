@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{1A943346-7FF6-46F7-B512-2885786A2F54}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CloudKitAtlas</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>CloudKitAtlas</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n></MtouchI18n>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchI18n></MtouchI18n>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n></MtouchI18n>
+    <MtouchArch>ARM64</MtouchArch>
+    <IpaPackageName></IpaPackageName>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n></MtouchI18n>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchI18n></MtouchI18n>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <MtouchI18n></MtouchI18n>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Menu\MainMenuTableViewController.cs" />
+    <Compile Include="Menu\MainMenuTableViewController.designer.cs">
+      <DependentUpon>MainMenuTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MainMenuTableViewCell.cs" />
+    <Compile Include="Menu\MainMenuTableViewCell.designer.cs">
+      <DependentUpon>MainMenuTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\SubmenuTableViewController.cs" />
+    <Compile Include="Menu\SubmenuTableViewController.designer.cs">
+      <DependentUpon>SubmenuTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\SubmenuTableViewCell.cs" />
+    <Compile Include="Menu\SubmenuTableViewCell.designer.cs">
+      <DependentUpon>SubmenuTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TextFieldTableViewCell.cs" />
+    <Compile Include="Form\TextFieldTableViewCell.designer.cs">
+      <DependentUpon>TextFieldTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LocationFieldTableViewCell.cs" />
+    <Compile Include="Form\LocationFieldTableViewCell.designer.cs">
+      <DependentUpon>LocationFieldTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ImageFieldTableViewCell.cs" />
+    <Compile Include="Form\ImageFieldTableViewCell.designer.cs">
+      <DependentUpon>ImageFieldTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BooleanFieldTableViewCell.cs" />
+    <Compile Include="Form\BooleanFieldTableViewCell.designer.cs">
+      <DependentUpon>BooleanFieldTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SelectionFieldTableViewCell.cs" />
+    <Compile Include="Form\SelectionFieldTableViewCell.designer.cs">
+      <DependentUpon>SelectionFieldTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results\ResultsViewController.cs" />
+    <Compile Include="Results\ResultsViewController.designer.cs">
+      <DependentUpon>ResultsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results\ResultTableViewCell.cs" />
+    <Compile Include="Results\ResultTableViewCell.designer.cs">
+      <DependentUpon>ResultTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results\AttributeTableViewCell.cs" />
+    <Compile Include="Results\AttributeTableViewCell.designer.cs">
+      <DependentUpon>AttributeTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results\AttributeKeyTableViewCell.cs" />
+    <Compile Include="Results\AttributeKeyTableViewCell.designer.cs">
+      <DependentUpon>AttributeKeyTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results\NestedAttributeTableViewCell.cs" />
+    <Compile Include="Results\NestedAttributeTableViewCell.designer.cs">
+      <DependentUpon>NestedAttributeTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results\ErrorViewController.cs" />
+    <Compile Include="Results\ErrorViewController.designer.cs">
+      <DependentUpon>ErrorViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results\ImageTableViewCell.cs" />
+    <Compile Include="Results\ImageTableViewCell.designer.cs">
+      <DependentUpon>ImageTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSamples\CodeSampleViewController.cs" />
+    <Compile Include="CodeSamples\CodeSampleViewController.designer.cs">
+      <DependentUpon>CodeSampleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\MainNavigationItem.cs" />
+    <Compile Include="Navigation\MainNavigationItem.designer.cs">
+      <DependentUpon>MainNavigationItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\NavigationBar.cs" />
+    <Compile Include="Navigation\NavigationBar.designer.cs">
+      <DependentUpon>NavigationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\NavigationController.cs" />
+    <Compile Include="Navigation\NavigationController.designer.cs">
+      <DependentUpon>NavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading\LoadingViewController.cs" />
+    <Compile Include="Loading\LoadingViewController.designer.cs">
+      <DependentUpon>LoadingViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table\TableView.cs" />
+    <Compile Include="Table\TableView.designer.cs">
+      <DependentUpon>TableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSamples\CodeSampleGroup.cs" />
+    <Compile Include="CodeSamples\CodeSample.cs" />
+    <Compile Include="CodeSamples\Notitfications\MarkNotificationsReadSample.cs" />
+    <Compile Include="Utils\CKNotificationWrapper.cs" />
+    <Compile Include="CodeSamples\Discoverability\RequestApplicationPermissionSample.cs" />
+    <Compile Include="CodeSamples\Discoverability\FetchUserRecordIdSample.cs" />
+    <Compile Include="CodeSamples\Discoverability\DiscoverUserInfoWithUserRecordIdSample.cs" />
+    <Compile Include="CodeSamples\Discoverability\DiscoverUserInfoWithEmailAddressSample.cs" />
+    <Compile Include="CodeSamples\Discoverability\DiscoverAllContactUserInfosSample.cs" />
+    <Compile Include="CodeSamples\Zones\FetchAllRecordZonesSample.cs" />
+    <Compile Include="CodeSamples\Zones\SaveRecordZoneSample.cs" />
+    <Compile Include="CodeSamples\Zones\DeleteRecordZoneSample.cs" />
+    <Compile Include="CodeSamples\Zones\FetchRecordZoneSample.cs" />
+    <Compile Include="CodeSamples\Query\PerformQuerySample.cs" />
+    <Compile Include="CodeSamples\Records\SaveRecordSample.cs" />
+    <Compile Include="CodeSamples\Records\DeleteRecordSample.cs" />
+    <Compile Include="CodeSamples\Records\FetchRecordSample.cs" />
+    <Compile Include="CodeSamples\Sync\FetchRecordChangesSample.cs" />
+    <Compile Include="CodeSamples\Subscriptions\SaveSubscriptionSample.cs" />
+    <Compile Include="CodeSamples\Subscriptions\DeleteSubscriptionSample.cs" />
+    <Compile Include="CodeSamples\Subscriptions\FetchSubscriptionSample.cs" />
+    <Compile Include="CodeSamples\Subscriptions\FetchAllSubscriptionsSample.cs" />
+    <Compile Include="Utils\CKRecordIdWrapper.cs" />
+    <Compile Include="Utils\CKDiscoveredUserInfoWrapper.cs" />
+    <Compile Include="Form\FormFieldTableViewCell.cs" />
+    <Compile Include="Utils\NullableExtensions.cs" />
+    <Compile Include="Utils\SegueArg.cs" />
+    <Compile Include="Results\ResultOrErrorViewController.cs" />
+    <Compile Include="Utils\CKRecordWrapper.cs" />
+    <Compile Include="Utils\CKRecordZoneWrapper.cs" />
+    <Compile Include="Utils\CKRecordZoneIdWrapper.cs" />
+    <Compile Include="Utils\CKSubscriptionWrapper.cs" />
+    <Compile Include="Navigation\NotificationBar.cs" />
+    <Compile Include="Utils\CKFetchRecordChangesOperationFactory.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Menu\" />
+    <Folder Include="Form\" />
+    <Folder Include="Results\" />
+    <Folder Include="CodeSamples\" />
+    <Folder Include="Navigation\" />
+    <Folder Include="Loading\" />
+    <Folder Include="Table\" />
+    <Folder Include="CodeSamples\Notitfications\" />
+    <Folder Include="Utils\" />
+    <Folder Include="CodeSamples\Discoverability\" />
+    <Folder Include="CodeSamples\Zones\" />
+    <Folder Include="CodeSamples\Query\" />
+    <Folder Include="CodeSamples\Records\" />
+    <Folder Include="CodeSamples\Sync\" />
+    <Folder Include="CodeSamples\Subscriptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\CloudKitCatalog120-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\CloudKitCatalog120.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\CloudKitCatalog152.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\CloudKitCatalog167-1.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\CloudKitCatalog58.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\CloudKitCatalog76.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\CloudKitCatalog80.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Authentication.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Authentication.imageset\authentication.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Discoverability.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Discoverability.imageset\discoverability.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Notifications.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Notifications.imageset\notifications.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Query.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Query.imageset\query.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Records.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Records.imageset\records.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Subscriptions.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Subscriptions.imageset\subscriptions.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Sync.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Sync.imageset\sync.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Zones.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Menu Icons\Zones.imageset\zones.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Navigation.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Navigation.imageset\nav_icon.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Title.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Title.imageset\cloudkit-catalog.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+  </ItemGroup>
+</Project>

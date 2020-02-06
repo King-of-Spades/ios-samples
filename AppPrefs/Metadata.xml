@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SampleMetadata>
+	<ID>67b46eb2-81d9-477f-a448-18e68db1227b</ID>
+	<IsFullApplication>false</IsFullApplication>
+	<Level>Intermediate</Level>
+	<Tags>Platform Features</Tags>
+	<Gallery>true</Gallery>
+	<Brief>An example on how to display application preferences in the "Settings" system application.</Brief>
+</SampleMetadata>

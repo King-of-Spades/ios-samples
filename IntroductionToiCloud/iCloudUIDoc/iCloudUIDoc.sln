@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCloudUIDoc", "iCloudUIDoc.csproj", "{DC7EA164-6ADE-4F64-A6E8-A3FF9FCF6F78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC7EA164-6ADE-4F64-A6E8-A3FF9FCF6F78}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{DC7EA164-6ADE-4F64-A6E8-A3FF9FCF6F78}.Debug|iPhone.Build.0 = Debug|iPhone
+		{DC7EA164-6ADE-4F64-A6E8-A3FF9FCF6F78}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{DC7EA164-6ADE-4F64-A6E8-A3FF9FCF6F78}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{DC7EA164-6ADE-4F64-A6E8-A3FF9FCF6F78}.Release|iPhone.ActiveCfg = Release|iPhone
+		{DC7EA164-6ADE-4F64-A6E8-A3FF9FCF6F78}.Release|iPhone.Build.0 = Release|iPhone
+		{DC7EA164-6ADE-4F64-A6E8-A3FF9FCF6F78}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{DC7EA164-6ADE-4F64-A6E8-A3FF9FCF6F78}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = iCloudUIDoc.csproj
+	EndGlobalSection
+EndGlobal

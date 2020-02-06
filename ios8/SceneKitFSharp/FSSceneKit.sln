@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "FSSceneKit", "FSSceneKit\FSSceneKit.fsproj", "{04744F51-603B-4FC3-8785-641D0ABF7339}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Debug|iPhone.Build.0 = Debug|iPhone
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Release|iPhone.ActiveCfg = Release|iPhone
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Release|iPhone.Build.0 = Release|iPhone
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Ad-Hoc|iPhone.ActiveCfg = Release|iPhone
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.Ad-Hoc|iPhone.Build.0 = Release|iPhone
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.AppStore|iPhone.ActiveCfg = Release|iPhone
+		{04744F51-603B-4FC3-8785-641D0ABF7339}.AppStore|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = FSSceneKit\FSSceneKit.fsproj
+	EndGlobalSection
+EndGlobal

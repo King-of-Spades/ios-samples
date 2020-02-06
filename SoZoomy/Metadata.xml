@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SampleMetadata>
+	<ID>a7c2693b-3413-4632-9a49-3c47f2b2b94d</ID>
+	<IsFullApplication>false</IsFullApplication>
+	<Level>Intermediate</Level>
+	<Tags>Media, Platform Features</Tags>
+    <LicenseRequirement>Indie</LicenseRequirement>
+	<Gallery>true</Gallery>
+	<Brief>Shows how to use the AVCaptureDevice APIs to zoom with the camera.</Brief>
+</SampleMetadata>

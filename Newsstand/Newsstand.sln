@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newsstand", "Newsstand\Newsstand.csproj", "{BABC9873-F1DB-4E50-8FC0-80E1B9547EDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BABC9873-F1DB-4E50-8FC0-80E1B9547EDF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{BABC9873-F1DB-4E50-8FC0-80E1B9547EDF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{BABC9873-F1DB-4E50-8FC0-80E1B9547EDF}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{BABC9873-F1DB-4E50-8FC0-80E1B9547EDF}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{BABC9873-F1DB-4E50-8FC0-80E1B9547EDF}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{BABC9873-F1DB-4E50-8FC0-80E1B9547EDF}.Debug|iPhone.Build.0 = Debug|iPhone
+		{BABC9873-F1DB-4E50-8FC0-80E1B9547EDF}.Release|iPhone.ActiveCfg = Release|iPhone
+		{BABC9873-F1DB-4E50-8FC0-80E1B9547EDF}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Newsstand.csproj
+	EndGlobalSection
+EndGlobal
