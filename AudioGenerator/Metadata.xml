@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<SampleMetadata>
-	<ID>5C6ED029-9438-4DA8-BEEA-06E34C0069DD</ID>
-	<IsFullApplication>false</IsFullApplication>
-	<Level>Advanced</Level>
-	<Tags>Media</Tags>
-	<Gallery>true</Gallery>
-	<Brief>Sample shows how to use the low-level AudioToolbox API.</Brief>
-</SampleMetadata>
